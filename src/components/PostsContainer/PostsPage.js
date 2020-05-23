@@ -7,12 +7,13 @@ import "./Posts.css";
 import './PostHeader'
 
 
+
 const PostsPage = (props) => {
   console.log(props)
   return (
     <div className="posts-container-wrapper">
-      {props.data.map((index) => (
-        <Post />
+      {props.post.map((item) => (
+        <Post post={item} />
       ))}
     </div>
   );

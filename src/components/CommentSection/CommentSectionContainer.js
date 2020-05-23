@@ -8,12 +8,14 @@ const CommentSection = props => {
   // Add state for the comments
   const [currentComment, setComment] = useState([0])
 
+
   return (
-    <div>
-      {Comment.map()}
-      {/* map through the comments data and return the Comment component */}
-      <CommentInput />
-    </div>
+    < div >
+      {props.comments.map((item) => (
+        <Comment commentData={item} />
+      ))}
+      < CommentInput />
+    </div >
   );
 };
 
