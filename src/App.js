@@ -6,8 +6,8 @@ Look at each file to see where you need to pass props or add code
 */
 import React from "react";
 import "./App.css";
-import './dummy-data';
-import './components/CommentSection/Comment'
+import dummyData from './dummy-data.js';
+import Comment from './components/CommentSection/Comment'
 import SearchBar from "./components/SearchBar/SearchBarContainer";
 import PostsPage from './components/PostsContainer/PostsPage';
 
@@ -21,8 +21,8 @@ const App = () => {
   return (
     <div className="App">
       {/* Add imported components here to render them */}
-      {SearchBar}
-      {PostsPage}
+      <SearchBar />
+      <PostsPage post={dummyData} />
 
     </div>
   );
