@@ -6,8 +6,6 @@ import "./Posts.css";
 // import data 
 import './PostHeader'
 
-
-
 const PostsPage = (props) => {
   console.log(props)
   return (
